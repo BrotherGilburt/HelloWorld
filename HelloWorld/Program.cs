@@ -7,8 +7,8 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             Start:
-            Console.Write("Enter a value:\nn = ");
-            int n = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter a value n:\nn = ");
+            long n = Convert.ToInt64(Console.ReadLine());
 
             Console.WriteLine("Fibonacci n = " + Fibulator(n));
 
@@ -20,12 +20,12 @@ namespace HelloWorld
             }
         }
 
-        static int Fibulator(int n)
+        static long Fibulator(long n)
         {
             return Fibulator(1, 1, n);
         }
 
-        static int Fibulator(int a, int b, int n)
+        static long Fibulator(long a, long b, long n)
         {
             if(n<1)
             {
