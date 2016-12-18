@@ -8,19 +8,20 @@ namespace HelloWorld
         {
             Start:
             Console.Write("Enter a value n:\nn = ");
-            int n = Convert.ToInt32(Console.ReadLine());
+            long n = Convert.ToInt64(Console.ReadLine());
 
             Console.WriteLine("Fibonacci n = " + Fibulator(n));
 
+            Console.WriteLine("Again!");
             goto Start;
         }
 
-        static int Fibulator(int n)
+        static long Fibulator(long n)
         {
             return Fibulator(1, 1, n);
         }
 
-        static int Fibulator(int a, int b, int n)
+        static long Fibulator(long a, long b, long n)
         {
             if(n<1)
             {
