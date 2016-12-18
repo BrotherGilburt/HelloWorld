@@ -7,12 +7,17 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             Start:
-            Console.Write("Enter a value n:\nn = ");
+            Console.Write("Enter a value:\nn = ");
             int n = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Fibonacci n = " + Fibulator(n));
 
-            goto Start;
+            Console.WriteLine("Again? (Y/N)");
+            if (Console.Read() == 'Y')
+            {
+                Console.ReadLine();
+                goto Start;
+            }
         }
 
         static int Fibulator(int n)
