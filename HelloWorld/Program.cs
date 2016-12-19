@@ -20,12 +20,12 @@ namespace HelloWorld
             }
         }
 
-        static long Fibulator(long n)
+        public static long Fibulator(long n)
         {
             return Fibulator(1, 1, n);
         }
 
-        static long Fibulator(long a, long b, long n)
+        public static long Fibulator(long a, long b, long n)
         {
             if(n<1)
             {
